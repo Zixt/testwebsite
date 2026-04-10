@@ -1,4 +1,7 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 $current_page    = 'contact';
 $page_title      = 'Contact Us — Matrix Technical Services';
 $meta_description = 'Get in touch with Matrix Technical Services. We\'d love to hear about your business and how we can help.';
@@ -43,10 +46,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $errors[] = 'PHPMailer not installed. Please run <code>composer install</code>.';
             } else {
                 require_once $vendor_path;
-
-                use PHPMailer\PHPMailer\PHPMailer;
-                use PHPMailer\PHPMailer\SMTP;
-                use PHPMailer\PHPMailer\Exception;
 
                 $mail = new PHPMailer(true);
                 try {
