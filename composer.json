@@ -1,0 +1,12 @@
+{
+    "name": "matrix/technical-services-website",
+    "description": "Matrix Technical Services website",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Matrix\\": "src/"
+        }
+    }
+}
