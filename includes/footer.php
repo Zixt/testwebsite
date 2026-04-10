@@ -39,7 +39,7 @@
                 <h4>Get In Touch</h4>
                 <ul>
                     <li><a href="mailto:info@matrixtechnical.co.uk">info@matrixtechnical.co.uk</a></li>
-                    <li><a href="tel:+441234567890">01234 567 890</a></li>
+                    <li><a href="tel:+442038134148">020 3813 4148</a></li>
                 </ul>
             </div>
 
@@ -47,7 +47,7 @@
 
         <div class="footer__bottom">
             <span>&copy; <?= date('Y') ?> Matrix Technical Services. All rights reserved.</span>
-            <span>Professional IT Solutions</span>
+            <span>Complete Technology Solutions</span>
         </div>
     </div>
 </footer>

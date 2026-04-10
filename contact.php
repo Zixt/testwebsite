@@ -134,7 +134,7 @@ require_once __DIR__ . '/includes/header.php';
                     </div>
                     <div>
                         <h4>Phone</h4>
-                        <p><a href="tel:+441234567890">01234 567 890</a></p>
+                        <p><a href="tel:+442038134148">020 3813 4148</a></p>
                     </div>
                 </div>
 
@@ -212,7 +212,7 @@ require_once __DIR__ . '/includes/header.php';
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone"
-                                   placeholder="01234 567 890"
+                                   placeholder="020 3813 4148"
                                    value="<?= htmlspecialchars($_POST['phone'] ?? '') ?>">
                         </div>
                         <div class="form-group">
