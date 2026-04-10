@@ -95,8 +95,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     exit;
 
                 } catch (Exception $e) {
+                    error_log('PHPMailer error: ' . $e->getMessage());
+                    error_log('PHPMailer debug: ' . $mail->ErrorInfo);
                     $errors[] = 'Sorry, there was a problem sending your message. Please try again or contact us directly.';
-                    // Optionally log: error_log($mail->ErrorInfo);
                 }
             }
         }
