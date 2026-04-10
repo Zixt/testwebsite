@@ -30,7 +30,19 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/services">Services</a></li>
+                    <li><a href="/careers">Careers</a></li>
                     <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="footer__col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/terms">Terms &amp; Conditions</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/anti-bribery">Anti-Bribery Policy</a></li>
+                    <li><a href="/modern-slavery">Modern Slavery</a></li>
                 </ul>
             </div>
 
