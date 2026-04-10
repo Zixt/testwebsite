@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/header.php';
 
             <div class="hero__content">
                 <div class="hero__tag">
-                    <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="5" fill="#1e88e5"/></svg>
+                    <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="5" fill="#0297d4"/></svg>
                     Trusted Technical Partner
                 </div>
 

@@ -14,7 +14,7 @@ function nav_class(string $page, string $current): string {
     <meta name="description" content="<?= htmlspecialchars($meta_description ?? 'Matrix Technical Services — expert connectivity, managed networks, EPOS, payments and IT services.') ?>">
     <title><?= htmlspecialchars($page_title ?? 'Matrix Technical Services') ?></title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231e88e5'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='900' font-size='18' fill='white'>M</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230297d4'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='900' font-size='18' fill='white'>M</text></svg>">
 </head>
 <body>
 
@@ -24,10 +24,8 @@ function nav_class(string $page, string $current): string {
 
             <!-- Logo -->
             <a href="/" class="navbar__logo" aria-label="Matrix Technical Services — Home">
-                <div class="navbar__logo-icon">MTS</div>
-                <div class="navbar__logo-text">
-                    Matrix Technical Services
-                    <span>Professional IT Solutions</span>
+                <div class="navbar__logo-img-wrap">
+                    <img src="/logo_black_png.png" alt="Matrix Technical Services" class="navbar__logo-img">
                 </div>
             </a>
 
