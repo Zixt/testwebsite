@@ -14,55 +14,101 @@ require_once __DIR__ . '/includes/header.php';
 
             <div class="hero__content">
                 <div class="hero__tag">
-                    <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="5" fill="#0297d4"/></svg>
-                    Trusted Technical Partner
+                    <svg width="8" height="8" viewBox="0 0 8 8" aria-hidden="true"><circle cx="4" cy="4" r="4" fill="#38bdf8"/></svg>
+                    Enterprise Technology Partner
                 </div>
 
                 <h1 class="hero__title">
-                    Technology Solutions<br>
-                    That <span class="accent">Drive Your Business</span>
+                    Complete Technology<br>
+                    Solutions for <span class="accent">Modern Business</span>
                 </h1>
 
                 <p class="hero__subtitle">
-                    From high-speed connectivity and managed networks to EPOS, payments and full IT support — Matrix Technical Services delivers reliable, expert solutions tailored to your business.
+                    Matrix Technical Services delivers end-to-end managed technology — from mission-critical connectivity and network infrastructure to EPOS, payments and strategic IT support.
                 </p>
 
                 <div class="hero__actions">
                     <a href="/services" class="btn btn--primary">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                        Our Services
+                        Explore Services
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                     <a href="/contact" class="btn btn--outline">
-                        Get In Touch
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        Request a Consultation
                     </a>
                 </div>
             </div>
 
-            <!-- Decorative grid of service icons -->
+            <!-- Capabilities panel -->
             <div class="hero__graphic" aria-hidden="true">
-                <div class="hero__card-grid">
-                    <div class="hero__mini-card">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                        <span>Connectivity</span>
+                <div class="hero__panel">
+                    <div class="hero__panel-header">Core Capabilities</div>
+
+                    <div class="hero__panel-item">
+                        <div class="hero__panel-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <div class="hero__panel-text">
+                            <strong>Connectivity</strong>
+                            <span>Leased lines, fibre &amp; 4G/5G failover</span>
+                        </div>
                     </div>
-                    <div class="hero__mini-card">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="16" y="2" width="6" height="6" rx="1"/><rect x="9" y="16" width="6" height="6" rx="1"/><path d="M5 8v4h14V8M12 12v4"/></svg>
-                        <span>Networks</span>
+
+                    <div class="hero__panel-item">
+                        <div class="hero__panel-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="16" y="2" width="6" height="6" rx="1"/><rect x="9" y="16" width="6" height="6" rx="1"/><path d="M5 8v4h14V8M12 12v4"/></svg>
+                        </div>
+                        <div class="hero__panel-text">
+                            <strong>Managed Networks</strong>
+                            <span>LAN, WAN &amp; Wi-Fi, monitored 24/7</span>
+                        </div>
                     </div>
-                    <div class="hero__mini-card">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-                        <span>EPOS</span>
+
+                    <div class="hero__panel-item">
+                        <div class="hero__panel-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                        </div>
+                        <div class="hero__panel-text">
+                            <strong>EPOS &amp; Payments</strong>
+                            <span>Integrated point-of-sale &amp; card processing</span>
+                        </div>
                     </div>
-                    <div class="hero__mini-card">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-                        <span>Payments</span>
+
+                    <div class="hero__panel-item">
+                        <div class="hero__panel-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>
+                        </div>
+                        <div class="hero__panel-text">
+                            <strong>IT Services &amp; Support</strong>
+                            <span>Helpdesk, cloud, security &amp; infrastructure</span>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
         </div>
     </div>
+
+    <!-- Stats bar -->
+    <div class="hero__stats">
+        <div class="hero__stat">
+            <span class="hero__stat-value">24<span class="accent">/</span>7</span>
+            <span class="hero__stat-label">Support Available</span>
+        </div>
+        <div class="hero__stat">
+            <span class="hero__stat-value">99<span class="accent">%</span></span>
+            <span class="hero__stat-label">Network Uptime SLA</span>
+        </div>
+        <div class="hero__stat">
+            <span class="hero__stat-value">UK<span class="accent">-</span>Based</span>
+            <span class="hero__stat-label">Expert Engineers</span>
+        </div>
+        <div class="hero__stat">
+            <span class="hero__stat-value">End<span class="accent">-</span>to<span class="accent">-</span>End</span>
+            <span class="hero__stat-label">Managed Solutions</span>
+        </div>
+    </div>
+
 </section>
 
 <!-- ============================================================
