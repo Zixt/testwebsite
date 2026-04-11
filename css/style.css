@@ -131,18 +131,16 @@ p  { color: var(--text-light); }
 }
 
 .navbar__logo-img-wrap {
-    background: var(--white);
-    border-radius: var(--radius);
-    padding: 4px 10px;
     display: flex;
     align-items: center;
     line-height: 0;
 }
 
 .navbar__logo-img {
-    height: 28px;
+    height: 36px;
     width: auto;
     display: block;
+    filter: brightness(0) invert(1);
 }
 
 /* Nav links */
@@ -900,9 +898,6 @@ p  { color: var(--text-light); }
 }
 
 .footer__logo-img-wrap {
-    background: var(--white);
-    border-radius: var(--radius);
-    padding: 5px 12px;
     display: inline-flex;
     align-items: center;
     line-height: 0;
@@ -912,6 +907,7 @@ p  { color: var(--text-light); }
     height: 34px;
     width: auto;
     display: block;
+    filter: brightness(0) invert(1);
 }
 
 .footer__col h4 {
