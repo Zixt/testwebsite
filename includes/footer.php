@@ -6,7 +6,7 @@
             <div class="footer__brand">
                 <div class="footer__logo-row">
                     <div class="footer__logo-img-wrap">
-                        <img src="/logo_black_png.png" alt="Matrix Technical Services" class="footer__logo-img">
+                        <img src="/logo_white_png.png" alt="Matrix Technical Services" class="footer__logo-img">
                     </div>
                 </div>
                 <p>Professional technical solutions for businesses of all sizes. Reliable, expert, and always on hand when you need us.</p>

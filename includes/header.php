@@ -41,7 +41,7 @@ function nav_class(string $page, string $current): string {
             <!-- Logo -->
             <a href="/" class="navbar__logo" aria-label="Matrix Technical Services — Home">
                 <div class="navbar__logo-img-wrap">
-                    <img src="/logo_black_png.png" alt="Matrix Technical Services" class="navbar__logo-img">
+                    <img src="/logo_white_png.png" alt="Matrix Technical Services" class="navbar__logo-img">
                 </div>
             </a>
 
