@@ -137,10 +137,9 @@ p  { color: var(--text-light); }
 }
 
 .navbar__logo-img {
-    height: 36px;
+    height: 44px;
     width: auto;
     display: block;
-    filter: brightness(0) invert(1);
 }
 
 /* Nav links */
@@ -904,10 +903,9 @@ p  { color: var(--text-light); }
 }
 
 .footer__logo-img {
-    height: 34px;
+    height: 40px;
     width: auto;
     display: block;
-    filter: brightness(0) invert(1);
 }
 
 .footer__col h4 {
