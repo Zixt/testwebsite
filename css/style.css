@@ -858,6 +858,17 @@ p  { color: var(--text-light); }
 
 .form-group textarea { min-height: 140px; resize: vertical; }
 
+/* Honeypot — visually hidden, not accessible to real users */
+.form-honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 /* Alert messages */
 .alert {
     padding: 14px 18px;

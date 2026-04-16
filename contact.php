@@ -7,12 +7,33 @@ $page_title      = 'Contact Us — Matrix Technical Services';
 $meta_description = 'Get in touch with Matrix Technical Services. We\'d love to hear about your business and how we can help.';
 
 // ================================================================
+// SPAM PROTECTION — honeypot + signed timing token
+// ================================================================
+define('FORM_SECRET', 'mts-contact-form-v1');
+
+$form_stamp = time();
+$form_nonce = hash_hmac('sha256', (string)$form_stamp, FORM_SECRET);
+
+// ================================================================
 // FORM HANDLER (POST)
 // ================================================================
 $errors   = [];
 $sent     = false;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    // --- Spam checks --------------------------------------------
+    $honeypot   = $_POST['_company_url'] ?? '';
+    $stamp      = (int)($_POST['_stamp']  ?? 0);
+    $nonce      = $_POST['_nonce']  ?? '';
+    $age        = time() - $stamp;
+    $valid_nonce = hash_equals(hash_hmac('sha256', (string)$stamp, FORM_SECRET), $nonce);
+
+    if ($honeypot !== '' || !$valid_nonce || $age < 3 || $age > 3600) {
+        // Silent fail — look like success to the bot
+        header('Location: /contact?sent=1');
+        exit;
+    }
 
     // --- Sanitise inputs ----------------------------------------
     $name    = trim(htmlspecialchars($_POST['name']    ?? '', ENT_QUOTES, 'UTF-8'));
@@ -192,6 +213,13 @@ require_once __DIR__ . '/includes/header.php';
                 <?php endif; ?>
 
                 <form method="POST" action="/contact" class="js-contact-form" novalidate>
+
+                    <!-- Spam protection: honeypot + timing -->
+                    <div class="form-honeypot" aria-hidden="true">
+                        <input type="text" name="_company_url" tabindex="-1" autocomplete="off" value="">
+                    </div>
+                    <input type="hidden" name="_stamp" value="<?= $form_stamp ?>">
+                    <input type="hidden" name="_nonce" value="<?= $form_nonce ?>">
 
                     <div class="form-row">
                         <div class="form-group">
