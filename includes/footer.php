@@ -24,6 +24,17 @@
                 </ul>
             </div>
 
+            <!-- London -->
+            <div class="footer__col">
+                <h4>London</h4>
+                <ul>
+                    <li><a href="/london">IT Services, London</a></li>
+                    <li><a href="/wifi-installation-london">WiFi Installation</a></li>
+                    <li><a href="/business-connectivity-london">Business Connectivity</a></li>
+                    <li><a href="/epos-systems-london">EPOS Systems</a></li>
+                </ul>
+            </div>
+
             <!-- Company -->
             <div class="footer__col">
                 <h4>Company</h4>
