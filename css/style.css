@@ -1039,3 +1039,218 @@ p  { color: var(--text-light); }
 
 .policy-content a { color: var(--blue); }
 .policy-content a:hover { color: var(--blue-hover); }
+
+/* ============================================================
+   NAVBAR CTA BUTTON
+   ============================================================ */
+.navbar__cta {
+    padding: 8px 18px !important;
+    font-size: 0.8rem !important;
+    margin-left: 8px;
+}
+
+/* ============================================================
+   SIGNUP / GET STARTED PAGE
+   ============================================================ */
+
+/* Step indicator */
+.step-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 680px;
+    margin: 0 auto 48px;
+}
+
+.step-indicator__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.step-indicator__num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--grey-light);
+    color: var(--grey);
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--transition), color var(--transition);
+}
+
+.step-indicator__step span {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: color var(--transition);
+    white-space: nowrap;
+}
+
+.step-indicator__step.active .step-indicator__num {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.step-indicator__step.active span { color: var(--navy); }
+
+.step-indicator__step.completed .step-indicator__num {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.step-indicator__step.completed span { color: var(--text-light); }
+
+.step-indicator__connector {
+    flex: 1;
+    height: 2px;
+    background: var(--grey-light);
+    margin: 0 12px;
+    margin-bottom: 24px;
+}
+
+/* Signup card */
+.signup-card {
+    max-width: 780px;
+    margin: 0 auto;
+    background: var(--white);
+    border: 1px solid var(--grey-light);
+    border-radius: var(--radius-lg);
+    padding: 48px 52px;
+    box-shadow: var(--shadow);
+}
+
+/* Step panels */
+.signup-step { display: none; }
+.signup-step.active { display: block; }
+
+.signup-step__title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+}
+
+.signup-step__desc {
+    font-size: 0.93rem;
+    color: var(--text-light);
+    margin-bottom: 32px;
+}
+
+/* Step nav (back/next buttons) */
+.signup-step__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--grey-light);
+}
+
+/* Service checkboxes */
+.services-checkboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    padding: 10px 14px;
+    border: 1.5px solid var(--grey-light);
+    border-radius: var(--radius);
+    transition: border-color var(--transition), background var(--transition);
+}
+
+.form-check:hover { border-color: var(--blue); background: var(--blue-light); }
+
+.form-check input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--blue);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+/* Consent checkbox (single, full width) */
+.form-check--consent {
+    grid-column: 1 / -1;
+    border: none;
+    padding: 0;
+    font-size: 0.88rem;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+.form-check--consent:hover { background: none; border-color: none; }
+
+/* Summary table (review step) */
+.summary-section { margin-bottom: 28px; }
+
+.summary-heading {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--blue);
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--grey-light);
+}
+
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.summary-table td {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--grey-light);
+    vertical-align: top;
+}
+
+.summary-table tr:last-child td { border-bottom: none; }
+
+.summary-label {
+    font-weight: 600;
+    color: var(--text-light);
+    width: 160px;
+    padding-right: 16px;
+}
+
+/* Inline field validation */
+.field-error {
+    font-size: 0.8rem;
+    color: #c62828;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.field-invalid {
+    border-color: #ef9a9a !important;
+    box-shadow: 0 0 0 3px rgba(198,40,40,0.1) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .signup-card { padding: 28px 20px; }
+    .services-checkboxes { grid-template-columns: 1fr; }
+    .step-indicator__step span { display: none; }
+    .step-indicator__connector { margin: 0 8px 0; }
+}

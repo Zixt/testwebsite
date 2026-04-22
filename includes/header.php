@@ -106,6 +106,8 @@ function nav_class(string $page, string $current): string {
 
                 <a href="/contact" class="<?= nav_class('contact', $current_page) ?>">Contact</a>
 
+                <a href="/signup" class="btn btn--primary navbar__cta">Get Started</a>
+
             </nav>
         </div>
     </div>
